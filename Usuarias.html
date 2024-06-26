@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Manzanas del cuidado</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link href="./styles.css" rel="stylesheet">
   </head>
   <body>
     <div class="container m-5">
@@ -35,11 +36,11 @@
                     <div class="row">
                         <div class="col m-1 ">
                                 <!--Section Users-->
-<div class="container">
-    <h1 class="text-center" id="Usuarios">Usuarios</h1>
+  <div class="container">
+    <h1 class="text-center" id="Usuarios">Usuarios(as)</h1>
     <!-- Button trigger modal -->
     <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#ModalUsers">
-    Registrar Usuarios
+    Registrar Usuarios(as)
     </button>
 
   <!-- Modal Users-->
@@ -47,7 +48,7 @@
   <div class="modal-dialog">
     <div class="modal-content">
       <div class="modal-header">
-        <h1 class="modal-title fs-5" id="exampleModalLabel">Registrar Usuarios</h1>
+        <h1 class="modal-title fs-5" id="exampleModalLabel">Registrar Usuarias</h1>
         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
       </div>
       <div class="modal-body">
@@ -64,20 +65,37 @@
           <textarea class="form-control" id="exampleFormControlTextarea1" rows="1"></textarea>
         </div>
         <div class="mb-3">
-          <label for="exampleFormControlTextarea1" class="form-label">Tipo de rol</label>
+          <label for="exampleFormControlTextarea1" class="form-label">Correo Electronico</label>
           <textarea class="form-control" id="exampleFormControlTextarea1" rows="1"></textarea>
         </div>
         <div class="mb-3">
-          <label for="exampleFormControlInput1" class="form-label">Correo Electronico</label>
+          <label for="exampleFormControlInput1" class="form-label">Direccion</label>
           <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
         </div>
         <div class="mb-3">
-          <label for="exampleFormControlTextarea1" class="form-label">Celular</label>
+          <label for="exampleFormControlTextarea1" class="form-label">Ciudad</label>
           <textarea class="form-control" id="exampleFormControlTextarea1" rows="1"></textarea>
         </div>
         <div class="mb-3">
-          <label for="exampleFormControlTextarea1" class="form-label">Ingrese una contraseña</label>
+          <label for="exampleFormControlTextarea1" class="form-label">Ocupación</label>
           <textarea class="form-control" id="exampleFormControlTextarea1" rows="1"></textarea>
+        </div>
+        <div class="mb-3">
+          <label for="exampleFormControlTextarea1" class="form-label">Servicios que le gustan</label>
+          <ul class="list-group">
+            <li class="list-group-item">
+              <input class="form-check-input me-1" type="checkbox" value="" id="firstCheckbox">
+              <label class="form-check-label" for="firstCheckbox">Peluqeria</label>
+            </li>
+            <li class="list-group-item">
+              <input class="form-check-input me-1" type="checkbox" value="" id="secondCheckbox">
+              <label class="form-check-label" for="secondCheckbox">Manicura</label>
+            </li>
+            <li class="list-group-item">
+              <input class="form-check-input me-1" type="checkbox" value="" id="thirdCheckbox">
+              <label class="form-check-label" for="thirdCheckbox">Masajes</label>
+            </li>
+          </ul>
         </div>      
       </div>
       <!--Modal Footer-->
@@ -90,7 +108,7 @@
 </div>
   <!-- Button trigger modal -->
   <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#ModalModifyUsers">
-    Modificar Usuarios
+    Modificar Usuarios(as)
   </button>
   <!-- Modal Modify Users-->
   <div class="modal fade" id="ModalModifyUsers" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
@@ -111,8 +129,8 @@
               <th scope="col">Numero de documento de Identidad</th>
               <th scope="col">Nombres</th>
               <th scope="col">Apellidos</th>
-              <th scope="col">tipo de rol</th>
               <th scope="col">Email</th>
+              <th scope="col">Telefono</th>
               <th scope="col">...</th>
             </tr>
           </thead>
@@ -130,7 +148,7 @@
     </div>
   </div>
 </div>
-    <table class="table-responsive">
+    <table class="table-responsive table-bordered border-primary table-group-divider sticky-top m-2" >
         <thead>
           <tr>
             <th scope="col">Numero de documento de Identidad</th>
@@ -142,6 +160,7 @@
             <th scope="col">Direccion</th>
             <th scope="col">Ocupacion</th>
             <th scope="col">Servicios que le gustan</th>
+            <th scope="col">Acciones</th>
           </tr>
         </thead>
         <tbody>
@@ -155,7 +174,11 @@
             <td>Car15#2-4</td>
             <td>Granjera</td>
             <td>Manicura, Corte de cabello</td>
-            <td><a class="link-offset-1" href="#">Eliminar</a></td>
+            <td>
+              <img class="imgicon active" type="submit" src="./img/pen-solid.svg" alt="Editar" title="Editar">
+              <img class="imgicon active" type="submit" src="./img/bag-check-fill.svg" alt="Habilitar" title="Habilitar">
+              <img class="imgicon active" type="submit" src="./img/bag-x-fill.svg" alt="InHabilitar" title="Inhabilitar">
+            </td>
           </tr>
           <tr>
             <th scope="row">1546461</th>
@@ -167,7 +190,11 @@
             <td>Car15#2-4</td>
             <td>Granjera</td>
             <td>Manicura, Corte de cabello</td>
-            <td><a class="link-offset-1" href="#">Eliminar</a></td>
+            <td>
+              <img class="imgicon active" type="submit" src="./img/pen-solid.svg" alt="Editar" title="Editar">
+              <img class="imgicon active" type="submit" src="./img/bag-check-fill.svg" alt="Habilitar" title="Habilitar">
+              <img class="imgicon active" type="submit" src="./img/bag-x-fill.svg" alt="InHabilitar" title="Inhabilitar">
+            </td>
           </tr>
           <tr>
             <th scope="row">1546461</th>
@@ -179,18 +206,22 @@
             <td>Car15#2-4</td>
             <td>Granjera</td>
             <td>Manicura, Corte de cabello</td>
-            <td><a class="link-offset-1" href="#">Eliminar</a></td>
+            <td>
+              <img class="imgicon active" type="submit" src="./img/pen-solid.svg" alt="Editar" title="Editar">
+              <img class="imgicon active" type="submit" src="./img/bag-check-fill.svg" alt="Habilitar" title="Habilitar">
+              <img class="imgicon active" type="submit" src="./img/bag-x-fill.svg" alt="InHabilitar" title="Inhabilitar">
+            </td>
           </tr>
         </tbody>
       </table>  
-  </div> 
+    </div> 
 
-                        </div>
-                    </div>
-                </div>
-            </div>
+          </div>
         </div>
+      </div>
     </div>
+  </div>
+</div>
    
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
   </body>
