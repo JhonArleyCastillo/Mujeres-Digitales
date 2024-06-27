@@ -16,10 +16,10 @@
                         <ul class="nav flex-column">
                             <img class="img-fluid" src="./img/iniciar-sesion.png" alt="img-perfil">
                             <li class="nav-item">
-                              <a class="nav-link" href="#">Registrar municipio</a>
+                              <a class="nav-link" href="./Municipio.html">Registrar municipio</a>
                             </li>
                             <li class="nav-item">
-                              <a class="nav-link" href="./manzanas.html">Registrar Manzanas</a>
+                                <a class="nav-link" href="#">Registrar Manzanas</a>
                             </li>
                             <li class="nav-item">
                               <a class="nav-link" href="./Servicio.html">Registrar servicios</a>
@@ -41,54 +41,37 @@
                       <div class="col m-1 ">
                               <!--Section Users-->
 <div class="container">
-  <h1 class="text-center" id="Usuarios">Municipios</h1>
+  <h1 class="text-center" id="Usuarios">Manzanas</h1>
   <!-- Button trigger modal -->
-  <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#ModalMunicipio">
-  Registrar Municipio
+  <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#ModalManzana">
+  Registrar Manzana
   </button>
 
 <!-- Modal Users-->
-<div class="modal fade" id="ModalMunicipio" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+<div class="modal fade" id="ModalManzana" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
 <div class="modal-dialog">
   <div class="modal-content">
     <div class="modal-header">
-      <h1 class="modal-title fs-5" id="exampleModalLabel">Registrar Municipio</h1>
+      <h1 class="modal-title fs-5" id="exampleModalLabel">Registrar Manzana</h1>
       <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
     </div>
     <div class="modal-body">
       <div class="mb-3">
-        <label for="exampleFormControlTextarea1" class="form-label">Ingrese el número de la manzana</label>
+        <label for="exampleFormControlTextarea1" class="form-label">Codigo de la manzana</label>
         <textarea class="form-control" id="exampleFormControlTextarea1" rows="1"></textarea>
       </div>
       <div class="mb-3">
-        <label for="exampleFormControlTextarea1" class="form-label">Ingresar Nombre de la manzana</label>
+        <label for="exampleFormControlTextarea1" class="form-label">Nombre de la manzana</label>
         <textarea class="form-control" id="exampleFormControlTextarea1" rows="1"></textarea>
       </div>
       <div class="mb-3">
-        <label for="exampleFormControlInput1" class="form-label">Direccion</label>
+        <label for="exampleFormControlInput1" class="form-label">Localidad</label>
         <textarea class="form-control" id="exampleFormControlTextarea1" rows="1"></textarea>
       </div>
       <div class="mb-3">
-        <label for="exampleFormControlTextarea1" class="form-label">Servicios</label>
+        <label for="exampleFormControlTextarea1" class="form-label">Dirección</label>
         <textarea class="form-control" id="exampleFormControlTextarea1" rows="1"></textarea>
-      </div>
-      <div class="mb-3">
-        <label for="exampleFormControlTextarea1" class="form-label">Categorias</label>
-        <ul class="list-group">
-          <li class="list-group-item">
-            <input class="form-check-input me-1" type="checkbox" value="" id="firstCheckbox">
-            <label class="form-check-label" for="firstCheckbox">Cuidado corporal</label>
-          </li>
-          <li class="list-group-item">
-            <input class="form-check-input me-1" type="checkbox" value="" id="secondCheckbox">
-            <label class="form-check-label" for="secondCheckbox">Atención psicologica</label>
-          </li>
-          <li class="list-group-item">
-            <input class="form-check-input me-1" type="checkbox" value="" id="thirdCheckbox">
-            <label class="form-check-label" for="thirdCheckbox">Compras</label>
-          </li>
-        </ul>
-      </div>      
+      </div>     
     </div>
     <!--Modal Footer-->
     <div class="modal-footer">
@@ -99,28 +82,28 @@
 </div>
 </div>
 <!-- Button trigger modal -->
-<button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#ModalModifyMunicipio">
-  Modificar Municipio
+<button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#ModalModifyManzana">
+  Modificar Manzana
 </button>
 <!-- Modal Modify Users-->
-<div class="modal fade" id="ModalModifyMunicipio" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+<div class="modal fade" id="ModalModifyManzana" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
 <div class="modal-dialog">
   <div class="modal-content">
     <div class="modal-header">
-      <h1 class="modal-title fs-5" id="exampleModalLabel">Modificar Usuarios</h1>
+      <h1 class="modal-title fs-5" id="exampleModalLabel">Modificar Manzana</h1>
       <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
     </div>
     <div class="modal-body">
       <form class="d-flex" role="search">
         <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-        <button class="btn btn-outline-success" type="submit">SearchMunicipio</button>
+        <button class="btn btn-outline-success" type="submit">SearchManzana</button>
       </form>
       <table class="table-responsive">
         <thead>
           <tr>
-            <th scope="col">Numero de manzana</th>
+            <th scope="col">Codigo de la manzana</th>
             <th scope="col">Nombre de Manzana</th>
-            <th scope="col">Municipio</th>
+            <th scope="col">Direccion</th>
             <th scope="col">...</th>
           </tr>
         </thead>
@@ -141,23 +124,19 @@
   <table class="table-responsive table-bordered border-primary table-group-divider sticky-top m-2" >
       <thead>
         <tr>
-          <th scope="col">Numeros de Manzana</th>
-          <th scope="col">Nombres de las Manzanas</th>
-          <th scope="col">Municipio</th>
-          <th scope="col">Direccion</th>
-          <th scope="col">Servicios que ofrecen</th>
-          <th scope="col">Categorias</th>
+          <th scope="col">Codigo de la Manzana</th>
+          <th scope="col">Nombre de la Manzana</th>
+          <th scope="col">Localidad</th>
+          <th scope="col">Direccion</th>          
           <th scope="col">Acciones</th>
         </tr>
       </thead>
       <tbody>
         <tr>
-          <th scope="row">1</th>
+          <th scope="row">131</th>
           <td>Manzana esmeralda</td>
-          <td>Garzon</td>
+          <td>San Vicente</td>
           <td>Car15#2-4</td>
-          <td>Manicura, Corte de cabello</td>
-          <td>Cuidado corporal, compras</td>
           <td>
             <img class="imgicon active" type="submit" src="./img/pen-solid.svg" alt="Editar" title="Editar">
             <img class="imgicon active" type="submit" src="./img/bag-check-fill.svg" alt="Habilitar" title="Habilitar">
@@ -165,12 +144,10 @@
           </td>
         </tr>
         <tr>
-          <th scope="row">2</th>
-          <td>Manzana diamante, manzana doble</td>
-          <td>Gigante</td>
+          <th scope="row">25</th>
+          <td>Manzana diamante</td>
+          <td>las Rosas</td>
           <td>Car15#2-4</td>
-          <td>Manicura, Corte de cabello</td>
-          <td>Cuidado corporal, compras</td>
           <td>
             <img class="imgicon active" type="submit" src="./img/pen-solid.svg" alt="Editar" title="Editar">
             <img class="imgicon active" type="submit" src="./img/bag-check-fill.svg" alt="Habilitar" title="Habilitar">
@@ -178,12 +155,10 @@
           </td>
         </tr>
         <tr>
-          <th scope="row">3</th>
-          <td>Manzana Ruby, manzana café</td>
-          <td>Pital</td>
+          <th scope="row">36</th>
+          <td>Manzana Ruby</td>
+          <td>El Roblal</td>
           <td>Car15#2-4</td>
-          <td>Manicura, Corte de cabello</td>
-          <td>Cuidado corporal, compras</td>
           <td>
             <img class="imgicon active" type="submit" src="./img/pen-solid.svg" alt="Editar" title="Editar">
             <img class="imgicon active" type="submit" src="./img/bag-check-fill.svg" alt="Habilitar" title="Habilitar">

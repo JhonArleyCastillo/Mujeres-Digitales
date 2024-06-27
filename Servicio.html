@@ -16,10 +16,13 @@
                         <ul class="nav flex-column">
                             <img class="img-fluid" src="./img/iniciar-sesion.png" alt="img-perfil">
                             <li class="nav-item">
-                              <a class="nav-link" href="./Municipio.html">Registrar municipio</a>
+                              <a class="nav-link" href="./Municipio.html">Registrar Municipio</a>
                             </li>
                             <li class="nav-item">
-                              <a class="nav-link" href="#">Registrar servicios</a>
+                              <a class="nav-link" href="./manzanas.html">Registrar Manzanas</a>
+                            </li>
+                            <li class="nav-item">
+                              <a class="nav-link" href="#">Registrar Servicios</a>
                             </li>
                             <li class="nav-item">
                               <a class="nav-link" href="./Categorias.html">Registrar Categorias</a>
@@ -37,66 +40,34 @@
                       <div class="col m-1 ">
                               <!--Section Users-->
 <div class="container">
-  <h1 class="text-center" id="Usuarios">Usuarios(as)</h1>
+  <h1 class="text-center" id="Usuarios">Servicios</h1>
   <!-- Button trigger modal -->
-  <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#ModalUsers">
-  Registrar Usuarios(as)
+  <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#ModalServicios">
+  Registrar Servicios
   </button>
 
 <!-- Modal Users-->
-<div class="modal fade" id="ModalUsers" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+<div class="modal fade" id="ModalServicios" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
 <div class="modal-dialog">
   <div class="modal-content">
     <div class="modal-header">
-      <h1 class="modal-title fs-5" id="exampleModalLabel">Registrar Usuarias</h1>
+      <h1 class="modal-title fs-5" id="exampleModalLabel">Registrar Servicio</h1>
       <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
     </div>
     <div class="modal-body">
       <div class="mb-3">
-        <label for="exampleFormControlTextarea1" class="form-label">Ingrese Numero de Documento</label>
+        <label for="exampleFormControlTextarea1" class="form-label">Codigo del servicio</label>
         <textarea class="form-control" id="exampleFormControlTextarea1" rows="1"></textarea>
       </div>
       <div class="mb-3">
-        <label for="exampleFormControlTextarea1" class="form-label">Ingresar Nombres</label>
+        <label for="exampleFormControlTextarea1" class="form-label">Nombre del servicio</label>
         <textarea class="form-control" id="exampleFormControlTextarea1" rows="1"></textarea>
       </div>
       <div class="mb-3">
-        <label for="exampleFormControlTextarea1" class="form-label">Ingresar apellidos</label>
+        <label for="exampleFormControlTextarea1" class="form-label">Descripción</label>
         <textarea class="form-control" id="exampleFormControlTextarea1" rows="1"></textarea>
       </div>
-      <div class="mb-3">
-        <label for="exampleFormControlTextarea1" class="form-label">Correo Electronico</label>
-        <textarea class="form-control" id="exampleFormControlTextarea1" rows="1"></textarea>
-      </div>
-      <div class="mb-3">
-        <label for="exampleFormControlInput1" class="form-label">Direccion</label>
-        <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
-      </div>
-      <div class="mb-3">
-        <label for="exampleFormControlTextarea1" class="form-label">Ciudad</label>
-        <textarea class="form-control" id="exampleFormControlTextarea1" rows="1"></textarea>
-      </div>
-      <div class="mb-3">
-        <label for="exampleFormControlTextarea1" class="form-label">Ocupación</label>
-        <textarea class="form-control" id="exampleFormControlTextarea1" rows="1"></textarea>
-      </div>
-      <div class="mb-3">
-        <label for="exampleFormControlTextarea1" class="form-label">Servicios que le gustan</label>
-        <ul class="list-group">
-          <li class="list-group-item">
-            <input class="form-check-input me-1" type="checkbox" value="" id="firstCheckbox">
-            <label class="form-check-label" for="firstCheckbox">Peluqeria</label>
-          </li>
-          <li class="list-group-item">
-            <input class="form-check-input me-1" type="checkbox" value="" id="secondCheckbox">
-            <label class="form-check-label" for="secondCheckbox">Manicura</label>
-          </li>
-          <li class="list-group-item">
-            <input class="form-check-input me-1" type="checkbox" value="" id="thirdCheckbox">
-            <label class="form-check-label" for="thirdCheckbox">Masajes</label>
-          </li>
-        </ul>
-      </div>      
+      
     </div>
     <!--Modal Footer-->
     <div class="modal-footer">
@@ -107,30 +78,28 @@
 </div>
 </div>
 <!-- Button trigger modal -->
-<button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#ModalModifyUsers">
-  Modificar Usuarios(as)
+<button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#ModalModifyServicios">
+  Modificar Servicios
 </button>
 <!-- Modal Modify Users-->
-<div class="modal fade" id="ModalModifyUsers" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+<div class="modal fade" id="ModalModifyServicios" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
 <div class="modal-dialog">
   <div class="modal-content">
     <div class="modal-header">
-      <h1 class="modal-title fs-5" id="exampleModalLabel">Modificar Usuarios</h1>
+      <h1 class="modal-title fs-5" id="exampleModalLabel">Modificar Servicio</h1>
       <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
     </div>
     <div class="modal-body">
       <form class="d-flex" role="search">
         <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-        <button class="btn btn-outline-success" type="submit">SearchUser</button>
+        <button class="btn btn-outline-success" type="submit">SearchServicio</button>
       </form>
       <table class="table-responsive">
         <thead>
           <tr>
-            <th scope="col">Numero de documento de Identidad</th>
-            <th scope="col">Nombres</th>
-            <th scope="col">Apellidos</th>
-            <th scope="col">Email</th>
-            <th scope="col">Telefono</th>
+            <th scope="col">Codigo del servicio</th>
+            <th scope="col">Nombre del servicio</th>
+            <th scope="col">Descripcion</th>
             <th scope="col">...</th>
           </tr>
         </thead>
@@ -151,29 +120,17 @@
   <table class="table-responsive table-bordered border-primary table-group-divider sticky-top m-2" >
       <thead>
         <tr>
-          <th scope="col">Numero de documento de Identidad</th>
-          <th scope="col">Nombres</th>
-          <th scope="col">Apellidos</th>
-          <th scope="col">Telefono</th>
-          <th scope="col">Email</th>
-          <th scope="col">Ciudad</th>
-          <th scope="col">Direccion</th>
-          <th scope="col">Ocupacion</th>
-          <th scope="col">Servicios que le gustan</th>
+          <th scope="col">Codigo del servicio</th>
+          <th scope="col">Nombre del servicio</th>
+          <th scope="col">Descripcion</th>
           <th scope="col">Acciones</th>
         </tr>
       </thead>
       <tbody>
         <tr>
-          <th scope="row">1546461</th>
-          <td>ANA</td>
-          <td>Tuyi</td>
-          <td>3564641215</td>
-          <td>@ANAtuyi</td>
-          <td>Garzon</td>
-          <td>Car15#2-4</td>
-          <td>Granjera</td>
-          <td>Manicura, Corte de cabello</td>
+          <th scope="row">6461</th>
+          <td>Corte de cabello</td>
+          <td>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt assumenda, error dolorum at quod odio, iste exercitationem minima dignissimos atque corrupti. Perspiciatis voluptatibus deserunt repellat?</td>
           <td>
             <img class="imgicon active" type="submit" src="./img/pen-solid.svg" alt="Editar" title="Editar">
             <img class="imgicon active" type="submit" src="./img/bag-check-fill.svg" alt="Habilitar" title="Habilitar">
@@ -181,15 +138,9 @@
           </td>
         </tr>
         <tr>
-          <th scope="row">1546461</th>
-          <td>ANA</td>
-          <td>Tuyi</td>
-          <td>3564641215</td>
-          <td>@ANAtuyi</td>
-          <td>Garzon</td>
-          <td>Car15#2-4</td>
-          <td>Granjera</td>
-          <td>Manicura, Corte de cabello</td>
+          <th scope="row">1545</th>
+          <td>Manicura</td>
+          <td>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vero nisi aspernatur saepe commodi culpa illo ipsa praesentium et eum. Molestiae est facere incidunt quia molestias.</td>
           <td>
             <img class="imgicon active" type="submit" src="./img/pen-solid.svg" alt="Editar" title="Editar">
             <img class="imgicon active" type="submit" src="./img/bag-check-fill.svg" alt="Habilitar" title="Habilitar">
@@ -197,15 +148,9 @@
           </td>
         </tr>
         <tr>
-          <th scope="row">1546461</th>
-          <td>ANA</td>
-          <td>Tuyi</td>
-          <td>3564641215</td>
-          <td>@ANAtuyi</td>
-          <td>Garzon</td>
-          <td>Car15#2-4</td>
-          <td>Granjera</td>
-          <td>Manicura, Corte de cabello</td>
+          <th scope="row">6162</th>
+          <td>Masajes</td>
+          <td>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quidem aut, tenetur ad, modi, sit labore temporibus a inventore ullam repudiandae vero quasi minus incidunt asperiores?</td>
           <td>
             <img class="imgicon active" type="submit" src="./img/pen-solid.svg" alt="Editar" title="Editar">
             <img class="imgicon active" type="submit" src="./img/bag-check-fill.svg" alt="Habilitar" title="Habilitar">
@@ -225,5 +170,4 @@
    
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
   </body>
-  
 </html>
