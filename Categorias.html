@@ -120,19 +120,49 @@
 </div>
 </div>
 </div>
+<form class="d-flex" role="search">
+  <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+  <button class="btn btn-outline-success" type="submit">SearchCategories</button>
+</form>
     <table class="table-responsive table-bordered border-primary table-group-divider m-2" >
       <thead class="" >
         <tr  class=" bg-primary">
           <th scope="col">Codigo de la Categoria</th>
-          <th scope="col">Nombre de la Categoria</th>
+          <th scope="col"><a class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#Clientes" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Nombre de la Categoria
+            </a>
+            <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#belleza">Belleza</a></li>
+            <li><hr class="dropdown-divider"></li>
+            <li><a class="dropdown-item " href="#cuidadop">Cuidado Personal</a></li>
+            <li><hr class="dropdown-divider"></li>
+            <li><a class="dropdown-item" href="#estudio">Estudio</a></li>
+            <li><hr class="dropdown-divider"></li>
+            <li><a class="dropdown-item" href="#emprendimiento">Emprendimiento</a></li>
+            <li><hr class="dropdown-divider"></li>
+            <li><a class="dropdown-item" href="#empleo">Empleo</a></li>
+            <li><hr class="dropdown-divider"></li>
+            <li><a class="dropdown-item" href="#descanzo">Descanzo</a></li>
+            <li><hr class="dropdown-divider"></li>
+            <li><a class="dropdown-item" href="#deporte">Deporte</a></li>
+            <li><hr class="dropdown-divider"></li>
+            <li><a class="dropdown-item" href="#asesoriaj">Asesoria Juridica</a></li>
+            <li><hr class="dropdown-divider"></li>
+            <li><a class="dropdown-item" href="#atenciom">Atencion Medica</a></li>
+            <li><hr class="dropdown-divider"></li>
+            <li><a class="dropdown-item" href="#lavanderia">Lavanderia</a></li>
+          </ul>
+        </a></th>
           <th scope="col">Descripción de la Categoria</th>
           <th scope="col">Acciones</th>
         </tr>
       </thead>
-      <tbody>
+        <tbody>
+        
         <tr>
           <th scope="row">1</th>
-          <td>Belleza</td>
+          <td id="belleza">Belleza</td>
           <td>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus sequi nobis deleniti maiores explicabo aliquid quibusdam totam, porro sit aut hic ipsa sapiente mollitia facilis.</td>
           <td>
             <img class="imgicon active" type="submit" src="./img/pen-solid.svg" alt="Editar" title="Editar">
@@ -142,7 +172,7 @@
         </tr>
         <tr>
           <th scope="row">2</th>
-          <td>Cuidado Personal</td>
+          <td id="cuidadop">Cuidado Personal</td>
           <td>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla ipsa eos voluptates enim, voluptatibus cupiditate consectetur ducimus exercitationem odio omnis et dolorem reiciendis nam vero.</td>
           <td>
             <img class="imgicon active" type="submit" src="./img/pen-solid.svg" alt="Editar" title="Editar">
@@ -151,8 +181,8 @@
           </td>
         </tr>
         <tr>
-          <th scope="row">3</th>
-          <td>Estudio</td>
+          <th scope="row" id="item-3">3</th>
+          <td id="estudio">Estudio</td>
           <td>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Accusantium, ducimus earum illo voluptate doloremque iure recusandae impedit adipisci, aliquam quasi esse et maxime, possimus excepturi.</td>
           <td>
             <img class="imgicon active" type="submit" src="./img/pen-solid.svg" alt="Editar" title="Editar">
@@ -162,7 +192,7 @@
         </tr>
         <tr>
           <th scope="row">4</th>
-          <td>Emprendimiento</td>
+          <td id="emprendimiento">Emprendimiento</td>
           <td>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Accusantium, ducimus earum illo voluptate doloremque iure recusandae impedit adipisci, aliquam quasi esse et maxime, possimus excepturi.</td>
           <td>
             <img class="imgicon active" type="submit" src="./img/pen-solid.svg" alt="Editar" title="Editar">
@@ -172,7 +202,7 @@
         </tr>
         <tr>
           <th scope="row">5</th>
-          <td>Empleo</td>
+          <td id="empleo">Empleo</td>
           <td>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Accusantium, ducimus earum illo voluptate doloremque iure recusandae impedit adipisci, aliquam quasi esse et maxime, possimus excepturi.</td>
           <td>
             <img class="imgicon active" type="submit" src="./img/pen-solid.svg" alt="Editar" title="Editar">
@@ -182,7 +212,7 @@
         </tr>
         <tr>
           <th scope="row">6</th>
-          <td>Descanzo</td>
+          <td id="descanzo">Descanzo</td>
           <td>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Accusantium, ducimus earum illo voluptate doloremque iure recusandae impedit adipisci, aliquam quasi esse et maxime, possimus excepturi.</td>
           <td>
             <img class="imgicon active" type="submit" src="./img/pen-solid.svg" alt="Editar" title="Editar">
@@ -192,7 +222,7 @@
         </tr>
         <tr>
           <th scope="row">7</th>
-          <td>Deporte</td>
+          <td id="deporte">Deporte</td>
           <td>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Accusantium, ducimus earum illo voluptate doloremque iure recusandae impedit adipisci, aliquam quasi esse et maxime, possimus excepturi.</td>
           <td>
             <img class="imgicon active" type="submit" src="./img/pen-solid.svg" alt="Editar" title="Editar">
@@ -202,7 +232,7 @@
         </tr>
         <tr>
           <th scope="row">8</th>
-          <td>Asesoria Juridica</td>
+          <td id="asesoriaj">Asesoria Juridica</td>
           <td>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Accusantium, ducimus earum illo voluptate doloremque iure recusandae impedit adipisci, aliquam quasi esse et maxime, possimus excepturi.</td>
           <td>
             <img class="imgicon active" type="submit" src="./img/pen-solid.svg" alt="Editar" title="Editar">
@@ -212,7 +242,7 @@
         </tr>
         <tr>
           <th scope="row">9</th>
-          <td>Atencion Medica</td>
+          <td id="atencionm">Atencion Medica</td>
           <td>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Accusantium, ducimus earum illo voluptate doloremque iure recusandae impedit adipisci, aliquam quasi esse et maxime, possimus excepturi.</td>
           <td>
             <img class="imgicon active" type="submit" src="./img/pen-solid.svg" alt="Editar" title="Editar">
@@ -222,7 +252,7 @@
         </tr>
         <tr>
           <th scope="row">10</th>
-          <td>Lavanderia</td>
+          <td id="lavanderia">Lavanderia</td>
           <td>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Accusantium, ducimus earum illo voluptate doloremque iure recusandae impedit adipisci, aliquam quasi esse et maxime, possimus excepturi.</td>
           <td>
             <img class="imgicon active" type="submit" src="./img/pen-solid.svg" alt="Editar" title="Editar">
@@ -230,9 +260,10 @@
             <img class="imgicon active" type="submit" src="./img/bag-x-fill.svg" alt="InHabilitar" title="Inhabilitar">
           </td>
         </tr>
+        
       </tbody>
     </table>  
-  </div> 
+  </div>
 
         </div>
       </div>
