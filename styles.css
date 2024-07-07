@@ -331,6 +331,16 @@ body{
 }
 
 .map1{
-    width: 440px;
+    width: 505px;
     height: 300px;
+}
+
+.img-card{
+    width: 150px;
+    height: 150px;
+}
+
+.img-sp{
+    height: 320px;
+    width: auto;
 }
