@@ -54,8 +54,8 @@
                 <div class="col-9 m-1">
                   <h1 class="text-center">Reguistrar Municipio</h1>
                   <form class="row g-3 needs-validation" novalidate>
-                    <div class="col-md-4">
-                      <div class="form-group">
+                    <div class="col-md-6">
+                      <div class="form-group m-2">
                         <label for="departamento"><strong>DEPARTAMENTO</strong></label>
                         <select class="form-control" id="departamento" name="departamento" required>
                             <option value = ""> </option>
@@ -93,7 +93,7 @@
                             <option value = "Vichada">Vichada</option>
                           </select>
                         </div>
-                        <label for="city" class="control-label">Municipio</label>
+                        <div class="form-group m-2"><label for="city" class="control-label"><strong>Municipio</strong></label>
                           <select class="form-control" id="city" required>
                                             <option value="">Selecciona una opción...</option>
                                             <option value="Abejorral">Abejorral</option>
@@ -1217,15 +1217,15 @@
                                             <option value="Zipaquirá">Zipaquirá</option>
                                             <option value="Zona Bananera">Zona Bananera</option>
                           </select>
-                          
-                            <label for="validationCustom04" class="form-label">Número de manzana</label>
+                        </div>
+                        
+                        <div class="form-check m-2"><label for="validationCustom04" class="form-label"><strong>Número de manzana</strong></label>
                             <select class="form-select" id="validationCustom04" required>
                               <option disabled >1 Ocupada</option>
                               <option disabled>2 Ocupada</option>
                               <option disabled>3 Ocupada</option>
                               <option disabled>4 Ocupada</option>
                               <option> 
-       
                                 <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
                                 <label class="form-check-label" for="flexCheckDefault">
                                   5 Disponible
@@ -1238,31 +1238,32 @@
                                 </label>
                               </option>
                               <option>...</option>
-                              
                             </select>
                             <div class="invalid-feedback">
                               Please select a valid state.
                             </div>
-                          </div>
-                    <div class="col-md-4">
-                      <label for="validationCustom02" class="form-label">Last name</label>
-                      <input type="text" class="form-control" id="validationCustom02" value="Otto" required>
+                          </div> 
+                  </div>
+                    <div class="col-md-6">
+                      <label for="validationCustom02" class="form-label"><strong>Escriba el nombre de la manzana</strong> </label>
+                      <input type="text" class="form-control" id="validationCustom02" value="manzana" required>
                       <div class="valid-feedback">
                         Looks good!
                       </div>
+                    <div class="mb-3">
+                      <label for="exampleFormControlInput1" class="form-label">Direccion</label>
+                      <textarea class="form-control" id="exampleFormControlTextarea1" rows="1"></textarea>
                     </div>
-                    <div class="col-md-4">
-                      <label for="validationCustomUsername" class="form-label">Username</label>
-                      <div class="input-group has-validation">
-                        <span class="input-group-text" id="inputGroupPrepend">@</span>
-                        <input type="text" class="form-control" id="validationCustomUsername" aria-describedby="inputGroupPrepend" required>
-                        <div class="invalid-feedback">
-                          Please choose a username.
-                        </div>
-                      </div>
+                    <div class="mb-3">
+                      <label for="exampleFormControlTextarea1" class="form-label">Servicios</label>
+                      <textarea class="form-control" id="exampleFormControlTextarea1" rows="1"></textarea>
                     </div>
+                    <div class="mb-3">
+                      <label for="exampleFormControlTextarea1" class="form-label">Categorias</label>
+                      <textarea class="form-control" id="exampleFormControlTextarea1" rows="1"></textarea>
+                    </div>
+                  </div>
                     
-                  
                     
                     <div class="col-12">
                       <div class="form-check">
